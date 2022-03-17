@@ -10,6 +10,7 @@ const Header = () =>{
     return (
 <>
 
+<header>
 <div className='navBar'>
     <div className='banner'>
             <span className="banner-left">WhatsApp 3516170XXX | Email: computadorasmunoz@gmail.com</span>
@@ -33,6 +34,7 @@ const Header = () =>{
         </nav>
     </div>
 </div>
+</header>
 
 
 
