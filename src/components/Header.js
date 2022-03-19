@@ -4,7 +4,7 @@ import React from 'react';
 import './Header.css';
 import logo from '../img/logopc.png';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { CartWidget } from './CartWidget';
 const Header = () =>{
 
     return (
@@ -30,7 +30,7 @@ const Header = () =>{
             <a href="#">Ventas Corporativas</a>
             <a href="#">Contacto</a>
             <a href="#"><PersonOutlineIcon className='userIcon'></PersonOutlineIcon></a>
-            <a href="#"><ShoppingCartIcon></ShoppingCartIcon></a>
+            <a href="#"><CartWidget></CartWidget></a>
         </nav>
     </div>
 </div>
