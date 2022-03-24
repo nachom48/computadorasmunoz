@@ -4,28 +4,26 @@ import Card from 'react-bootstrap/Card'
 import {useState} from "react";
 import computadora from "../../img/computadora.jpg"
 
-export const ItemCount = (props)=>{
 
-const [contador,setContador]=useState(0)
+export const ItemCount = ({stock,initial,onAdd})=>{
+
+const [contador,setContador]=useState(initial)
         
     const handlerClickAdd =()=>{
-            if(contador<props.stock)setContador(contador+1)
+            if(contador<stock)setContador(contador+1)
             };
         const handlerClickSub =()=>{
-            if(contador>props.initial)setContador(contador-1)
+            if(contador>initial)setContador(contador-1)
             }
 
         const reset = ()=>{
             setContador(0)
         }
-
-        const alerts=()=>{
-            if (contador>0){
-                setContador(0);
-                alert("Se ha agregado al carrito exitosamente")
-            }
+        const handlerCart = () =>{
+            onAdd(contador);
         }
 
+      
     
     return(
         <>
@@ -41,7 +39,7 @@ const [contador,setContador]=useState(0)
 
             <Button className="boton"  size="sm" variant="warning" onClick={handlerClickSub}>-</Button>
             </div>
-            <Button  className="boton-agregar" onClick={alerts} variant="warning">Agregar al Carrito</Button>
+            <Button  className="boton-agregar" onClick={handlerCart} variant="warning">Agregar al Carrito</Button>
             <Button  className="boton-agregar" onClick={reset} variant="warning">Borrar carrito</Button>
 
                   </Card.Body>
