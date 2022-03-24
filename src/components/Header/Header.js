@@ -2,9 +2,9 @@
 
 import React from 'react';
 import './Header.css';
-import logo from '../img/logopc.png';
+import logo from '../../img/logopc.png'
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import { CartWidget } from './CartWidget';
+import { CartWidget } from '../CartWidget';
 const Header = () =>{
 
     return (

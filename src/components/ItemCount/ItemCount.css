@@ -1,0 +1,37 @@
+
+
+.card{
+    
+    background-color:rgb(250, 249, 192);
+    border-radius:20px;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+.card-img{
+    border-style:hidden;
+    border-radius:10%;
+}
+
+.card-title{
+    font-weight: 700;
+    font-size:larger;
+    display:flex;
+    justify-content:center;
+}
+.buttons{
+    font-weight:700;
+    display:flex;
+    justify-content:space-evenly;
+    
+}
+
+.boton-agregar{
+     margin-top:1ch;
+     display:flex;
+     font-weight:700;
+     margin-left:auto;
+     margin-right:auto;
+     justify-content:center;
+}
