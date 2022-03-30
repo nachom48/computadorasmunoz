@@ -2,7 +2,7 @@ import './ItemCount.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card'
 import {useState} from "react";
-import computadora from "../../img/computadora.jpg"
+
 
 
 export const ItemCount = ({stock,initial,onAdd})=>{
@@ -29,7 +29,7 @@ const [contador,setContador]=useState(initial)
         <>
        
           <Card className="card" style={{ width: '18rem' }}>
-            <Card.Img  className="card-img"variant="top" src={computadora} />
+            <Card.Img  className="card-img"variant="top" />
             <Card.Body>
             <Card.Title className="card-title">ItemName</Card.Title>
 

@@ -1,7 +1,7 @@
-
+/* 
 
 .card{
-    
+    border-color:black;
     background-color:rgb(250, 249, 192);
     border-radius:20px;
     display:flex;
@@ -34,4 +34,4 @@
      margin-left:auto;
      margin-right:auto;
      justify-content:center;
-}
+} */
