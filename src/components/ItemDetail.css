@@ -1,0 +1,94 @@
+.contenedor-principal{
+    border:thin solid lightgrey;
+    width:80%;
+    height:100vh;
+    margin-left:auto;
+    margin-right:auto;
+    display:grid;
+    grid-template-columns:80% 20%;
+    grid-template-rows: 4rem auto;
+    grid-template-areas:
+        "titulo-informacion titulo-informacion"
+        "contenedor-imagen contenedor-informacion-lateral"
+        "boton-descripcion-debajo boton-descripcion-debajo"
+        "informacion-producto informacion-producto";
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,238,238,1) 0%, rgba(182,185,186,1) 100%, rgba(84,187,241,1) 100%, rgba(0,212,255,1) 100%, rgba(92,25,98,1) 100%);
+    
+}
+
+.titulo-informacion{
+    grid-area: titulo-informacion;
+    display:flex;
+    justify-content:center;
+    color:rgb(255,221,45);
+    border:thin solid rgb(51,51,51);
+    background-color:rgb(51,51,51);
+}
+.contenedor-imagen{
+    margin-top:5rem;
+    margin-left:5rem;
+    grid-area:contenedor-imagen;
+    width:40%;
+    height:auto;
+    transition: transform .2s; 
+    
+
+}
+.contenedor-imagen:hover{
+    transform: scale(1.5); 
+}
+.contenedor-informacion-lateral{
+    background-color:#dcdcde;
+    border-radius: 8px;
+    border:1px solid rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: row;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    font-family:Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 372px;
+    margin-left:-15rem;
+    margin-top:5rem;
+    
+}
+.boton-descripcion-debajo{
+    font-family:sans-serif;
+    grid-area:boton-descripcion-debajo;
+    background-color:rgb(51,51,51);
+    border:thin solid rgb(51,51,51);
+    font-size:14px;
+    align-items:center;
+    font-weight:400;
+    height:5ch;
+    color:rgb(255,221,45);
+    display:flex;
+    justify-content:center;
+    width:20%;
+    border-radius:35px;
+    margin-left:5rem;
+    
+
+}
+.informacion-producto{
+    font-family:sans-serif;
+    margin-left:5rem;
+    grid-area:informacion-producto;
+    display:flex;
+    justify-content:center;
+    font-size:15px;
+    font-weight:600;
+
+}
+
+.medios-pago{
+font-size:18px;
+}

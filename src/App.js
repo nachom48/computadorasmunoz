@@ -1,9 +1,9 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React,{useState} from "react";
+import React from "react";
 import Header from "./components/Header/Header.js";
 import  ItemListCointainer  from "./components/ItemListContainer";
-
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 
 
@@ -15,7 +15,7 @@ return(
       <Header/>
       
       <ItemListCointainer id="1" name={name} />
-      
+      <ItemDetailContainer/>
         </>
 );
 };
