@@ -18,7 +18,7 @@ export default function ItemDetails ({productoDetalle}){
                     <h2 className="precio-informacion">Precio: ${productoDetalle.price}</h2>
                     <h3 className="stock">Stock:{productoDetalle.stock} unidades</h3>
                     <a className="medios-pago" href="">Ver los medios de pago</a>
-
+                    <button className="boton-comprar">COMPRAR</button>
                 </div>
                 <div className="boton-descripcion-debajo">Descripcion del Producto</div>
                 <div className="informacion-producto">{productoDetalle.description}</div>

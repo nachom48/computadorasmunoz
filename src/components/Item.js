@@ -2,10 +2,11 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card'
 import './Item.css';
+import {NavLink,Link} from "react-router-dom";
 
 
 export const Item = ({product})=>{
-    const {name,price,stock,img} = product;
+    const {name,price,img} = product;
     return (
         <Card className="card">
         <Card.Img  className="card-img" variant="top" src={img} alt=""/>
@@ -21,7 +22,7 @@ export const Item = ({product})=>{
         </div>
         <Button  className="boton-agregar"  variant="warning">Agregar al Carrito</Button>
         <Button  className="boton-agregar"  variant="warning">Borrar carrito</Button>
-
+        <Link to="/product/:id" ><Button  className="boton-ver-detalle"  variant="warning">Ver Detalle</Button></Link>
               </Card.Body>
         </Card>
       )

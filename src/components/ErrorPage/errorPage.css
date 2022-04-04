@@ -1,0 +1,32 @@
+.errorPage{
+    display:flex;
+    justify-content:center;
+    margin-left:auto;
+    margin-right:auto;
+    flex-direction:column;
+    width:80%;
+    align-items: center;
+}
+.errorcode{
+font-size:250px;
+
+display:flex;
+margin-bottom:-3rem;
+color:#464646;
+}
+.errorPage-bottom{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    font-weight:600;
+    font-size:18px;
+    margin-top:0;
+    color:white;
+    background-color:#464646;
+}
+.bottonHome{
+    border-radius:10px;
+    color:#464646;
+}
