@@ -3,8 +3,14 @@
     display: flex;
     flex-wrap:wrap;
     justify-content:space-evenly;
-    width: 80%;
+    width: 100%;
     margin-left:auto;
     margin-right:auto;
 }
 
+
+.spinners{
+    display:flex;
+    justify-content:space-between;
+    margin:10rem;
+  }

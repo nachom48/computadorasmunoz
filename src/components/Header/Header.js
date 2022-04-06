@@ -57,7 +57,7 @@ const Header = () =>{
                             <Dropdown.Menu>
                                          {categories.map((el)=>{
                                                                 return (
-                                                                        <Dropdown.Item> <Link className="dropdown text-primary" key={el.id} to={el.route}>{el.name}</Link></Dropdown.Item>
+                                                                        <Dropdown.Item  key={el.id}> <Link className="dropdown text-primary" to={el.route}>{el.name}</Link></Dropdown.Item>
                                                                          )
                                                                     })}
                              </Dropdown.Menu>

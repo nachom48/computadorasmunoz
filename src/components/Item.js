@@ -2,7 +2,7 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card'
 import './Item.css';
-import {NavLink,Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 export const Item = ({product})=>{
@@ -22,7 +22,7 @@ export const Item = ({product})=>{
         </div>
         <Button  className="boton-agregar"  variant="warning">Agregar al Carrito</Button>
         <Button  className="boton-agregar"  variant="warning">Borrar carrito</Button>
-        <Link to="/product/:id" ><Button  className="boton-ver-detalle"  variant="warning">Ver Detalle</Button></Link>
+        <Link to={`/product/${product.id}`} ><Button  className="boton-ver-detalle"  variant="warning">Ver Detalle</Button></Link>
               </Card.Body>
         </Card>
       )

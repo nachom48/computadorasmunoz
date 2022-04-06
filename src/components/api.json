@@ -2,10 +2,100 @@
   {
     "id": 1,
     "name": "Placa de video Geforce 3080",
-    "description": "Placa de video GeFroce Placa de video Colorful RTX3080Ti iGame Advanced OC 12GB GDDR6X",
-       
+    "description": "Placa de video GeFroce..",
     "price": 1250,
     "stock": 5,
+    "category": "componentes",
     "img": "https://http2.mlstatic.com/D_NQ_NP_853934-MLA47492063447_092021-O.webp"
+  },
+  {
+    "id": 2,
+    "name": "Fuente Coolermaster 750W 80 Bronce",
+    "description": " Sin ruido ni distracciones Debido a su funcionamiento silencioso; tu equipo operará minimizando el nivel de ruido; para que tu jornada sea más agradable;Protección asegurada. El sistema de protección OPP realiza un monitoreo constante de la corriente y; en caso de detectar una sobrecarga de energía; apaga el dispositivo para evitar daños",
+    "price": 200,
+    "stock": 5,
+    "category": "componentes",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_933872-MLA45654252002_042021-O.webp"
+  },
+  {
+    "id": 3,
+    "name": "Disco Solido SSD Colorful",
+    "description": "Con la unidad en estado sólido Colorful vas a incrementar la capacidad de respuesta de tu equipo. Gracias a esta tecnología podrás invertir en velocidad y eficiencia para el inicio; la carga y la transferencia de datos . Irrompible Además de su funcionalidad y soporte, la importancia de los discos de almacenamiento también radica en su calidad y resistencia. Despreocupate y disfrutá de la durabilidad de este producto debido a su capacidad de absorber y resistir fuertes impactos.Más velocidad a tu alcance Este producto posee una interfaz SATA III que se encarga de transferir datos con la placa madre de tu computadora. Es de gran importancia y con su velocidad de envío de información mejora el rendimiento. Vas a poder cargar todo tipo de archivos en tu PC con rapidez.",
+    "price": 50,
+    "stock": 5,
+    "category": "componentes",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_682074-MLA41164832047_032020-O.webp"
+  },
+  {
+    "id": 4,
+    "name": "Colorful DDR4-3200 8GB CVN RGB",
+    "description": "Memoria DDR4 8GB 3200MHz Colorful CVN RGB - Modelo: CVPC08G3200D4R8 - Memoria: 8GB - Velocidad: DDR4-3200 - Voltaje: 1.2V",
+    "price": 25,
+    "stock": 5,
+    "category": "componentes",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_659197-MLA48429437022_122021-W.webp"
+  },
+  {
+    "id": 5,
+    "name": "Motherboard ASUS PRIME HS510M",
+    "description": "LOS MOTHERBOARDS NO INCLUYEN VIDEO INTEGRADO, POR FAVOR PARA EVITAR DEVOLUCIONES CONSULTE SI SU PROCESADOR POSEE, MUCHAS GRACIAS! PLACA MOTHER ASUS H510 (LGA 1200) micro ATX con PCIe 4.0, ranura M.2 de 32Gbps, Intel 1 Gb Ethernet, DisplayPort, HDMI, D-Sub, USB 3.2 Gen 1 Tipo A, SATA 6Gbps, encabezado COM, encabezado RGB. INTEL LGA 1200 socket: LISTO PARA 11va y 10ma Geneneracion de Procesadores Intel - Conectividad ultrarrápida: PCIe 4.0, ranura M.2 de 32 Gbps, Ethernet Intel de 1 Gb y USB 3.2 Gen 1 Tipo A - Refrigeración completa: disipador de calor PCH y Fan Xpert  - 5X Protection III: múltiples protecciones de hardware para una protección completa ",
+    "price": 250,
+    "stock": 5,
+    "category": "componentes",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_672250-MLA48003407067_102021-W.webp"
+  },
+  {
+    "id": 6,
+    "name": "Gabinete Vidrio Templado Magnum Tech",
+    "description": "Marca: Magnum Tech Línea: Gamer Modelo: MT-235GM Incluye fuente de alimentación: No Tipo de estructura: Mid tower Puertos: 1x 2.0; 1x 3.0 Bahías: 2x 3.5” + 2x 2.5” Potencia de la fuente de alimentación: 1 W Altura x Ancho x Largo: 460 cm x 210 cm x 421 cm Tipo: Mid Tower Motherboard soportadas: ATX Bahías 3.5 x2, 2.5 x2: Entradas frontales: 2x USB 2.0, 2x Audio Jack 3.5 (Entrada y Salida)",
+    "price": 175,
+    "stock": 5,
+    "category": "componentes",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_684655-MLA43249855264_082020-W.webp"
+  },
+  {
+    "id": 7,
+    "name": "Teclado Mecanico Reddragon Kumara K552 ",
+    "description": "Redragon K552 Kumara RGB ES Negro ESPECIFICACIONES - Tipo Teclado: Mecanico - Tipo Switch: Outemu Redragon Blue o Red, de acuerdo disponibilidad del distribuidor - Teclas Multimedia: Si, dedicadas. - Teclas Macro Dedicadas: Si. - Bloqueo Tecla Windows: Si.  - Tamaño teclado: Tenkeyless (sin pad numerico). ",
+    "price": 38,
+    "stock": 5,
+    "category": "perisfericos",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_871071-MLA47949886927_102021-V.webp"
+  },
+  {
+    "id": 9,
+    "name": "Monitor 4k 28 pulgadas ",
+    "description": "MONITOR LED 28 4K 3840 x 2160 ULTRA HD 4K2800AR  INCLUYE CABLE HDMI 2.0 y CABLE DISPLAY PORT. Panel 28 (16: 9) TFT, retroiluminación LED Tipo de panel: plano Resolución: 3840 x 2160 Brillo: 300cd / m2 Relación de contraste: 1000: 1 Color de pantalla: 1.073B Ángulo de visión: H: 178° V: 178° Rango de inclinación: delantero 5°; trasero15° Tiempo de respuesta: 5-8 ms Frecuencia de escaneo H: 30 80KHz, V: 60Hz " ,
+    "price": 425,
+    "stock": 5,
+    "category": "perisfericos",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_888657-MLA45976073068_052021-W.webp"
+  },
+  {
+    "id": 10,
+    "name": "PC Intel i5 10400 240GB SSD 4GB HDMI",
+    "description": "PC Intel i5 10400 240GB SSD 4GB HDMI - Procesador: Intel I5 10400 (1200) - Motherboard: (1200) Motherboard H410 - Memoria: DDR4-2400 4GB - Disco duro: 240GB Sata 6gb/s SSD - Gabinete: Redragon GC-530 Ratchet - Fuente: Redragon GC-PS001 500W 80+ * El modelo exacto puede variar según stock disponible al momento de la entrega.",
+    "price": 1500,
+    "stock": 5,
+    "category": "pcs",
+    "img": "https://mundofix.com/349737-large_default/pc-intel-i5-10400-240gb-ssd-4gb-hdmi.jpg"
+  },
+  {
+    "id": 11,
+    "name": "TP-Link TL-WN725N USB",
+    "description": "Placa de red Inalámbrica TP-Link TL-WN725N USB Nano - Velocidad Inalámbrica de hasta 150Mbps- Utilidad en 14 idiomas y CD de ejecución automática- Soporta WMM (Wi-Fi Multimedia) Estándar para un mejor streaming de datos en tiempo real como Video, Música, Video Chat- Soporta WPS basado en el software",
+    "price": 20,
+    "stock": 5,
+    "category": "redes",
+    "img": "https://mundofix.com/442191-home_default/tp-link-tl-wn725n-usb.jpg-i5-10400-240gb-ssd-4gb-hdmi.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Reloj Haxly QUO 1.0 Grey",
+    "description": "Smartwatch Haxly QUO 1.0 Grey | 2 Correas - Tipo de pantalla: TFT-LCD, pantalla a color cuadrada - Tamaño de la pantalla: 1.4 pulgadas 240 x 240 pixeles - Conectividad inalámbrica: BT 4. - Clasificación resistencia: IP67",
+    "price": 10,
+    "stock": 5,
+    "category": "electronica",
+    "img": "https://mundofix.com/373800-home_default/haxly-quo-10-grey.jpg"
   }
 ]

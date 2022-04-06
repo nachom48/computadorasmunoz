@@ -1,7 +1,7 @@
-import React from 'react';
 import {ItemList} from './ItemList';
 import './ItemList.css';
-
+import React,{useState,useEffect} from "react";
+import Spinner from 'react-bootstrap/Spinner';
 
 const productosIniciales=[
     {   id:1 
@@ -13,49 +13,49 @@ const productosIniciales=[
         ,img:"https://http2.mlstatic.com/D_NQ_NP_853934-MLA47492063447_092021-O.webp" },
     {   id:2
         ,name:"Fuente Coolermaster 750W 80 Bronce"
-        ,description:"Placa de video GeFroce.."
+        ,description:"Fuente Coolermaster 750 W 80 Bronce "
         ,price:200
         ,stock:5
         ,category:"componentes"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_933872-MLA45654252002_042021-O.webp" },
     {   id:3
         ,name:"Disco Solido SSD Colorful"
-        ,description:"Placa de video GeFroce.."
+        ,description:"Disco Solido SSD Colorfull power."
         ,price:50
         ,stock:5
         ,category:"componentes"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_682074-MLA41164832047_032020-O.webp" },
     {   id:4
         ,name:"Memoria RAM 8 GB DDR 5 Colorful"
-        ,description:"Placa de video GeFroce.."
+        ,description:"Memoria RAM 8 GB "
         ,price:25
         ,stock:5
         ,category:"componentes"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_659197-MLA48429437022_122021-W.webp" },
     {   id:5
         ,name:"Motherboard ASUS PRIME HS510M"
-        ,description:"Placa de video GeFroce.."
+        ,description:"Motherboard Asus Prime HS510M"
         ,price:250
         ,stock:5
         ,category:"componentes"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_672250-MLA48003407067_102021-W.webp" },
     {   id:6
         ,name:"Gabinete Vidrio Templado"
-        ,description:"Placa de video GeFroce.."
+        ,description:"Gabinete Vidrio Templado"
         ,price:175
         ,stock:5
         ,category:"componentes"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_684655-MLA43249855264_082020-W.webp" },
     {   id:7
         ,name:"Teclado Mecanico Reddragon "
-        ,description:"Placa de video GeFroce.."
+        ,description:"Teclado Mecanico Reddragon"
         ,price:38
         ,stock:5
         ,category:"perisfericos"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_871071-MLA47949886927_102021-V.webp" },
     {   id:9
         ,name:"Monitor 4k 28 pulgadas "
-        ,description:"Placa de video GeFroce.."
+        ,description:"Monitor 4k 28 Pulgadas"
         ,price:425
         ,stock:5
         ,category:"perisfericos"
@@ -85,23 +85,50 @@ const productosIniciales=[
 
 ];
 
+  
+
+
+const ItemListContainer = ({ saludo }) => {
+   
 const promesa= new Promise((res)=>{
     setTimeout(() => {
         res(productosIniciales); 
-    }, 2000);
-  })
-const ItemListContainer = ({ saludo }) => {
-  
+    }, 2000);})
+    
+    const [productosCatalogo,setProductos]=useState([]);
+    
+         
+
+    
+    useEffect(() => {
+
+        promesa.then((arrayProductos)=> setProductos(arrayProductos)  )
+         
+    }, [])
+    
+                      
     return (
-        <div>
-            <p className="saludo">{saludo}</p>
-            <ItemList className="cards" productos={promesa} />
-      </div>
-    );
-  };
+  
+  <div className="cardss">
+        {
+            (productosCatalogo.length)
+                ?  <div >
+                        <p className="saludo">{saludo}</p>
+                        <ItemList  productos={productosCatalogo} />
+                    </div>
+                :   <div className="loading">
+                         <div className="spinners">
+                            <Spinner animation="border" variant="dark" />
+                         </div>
+                         <h2 className="cargando">Cargando Catalogo ,Aguarde</h2>
+                     </div> 
+        }
+
+    
+    </div>
+  )}
+
   
   export default ItemListContainer;
- 
-    //const onAdd = (count) => {
-      //alert(`Agregaste ${count} items al carrito`);
-   // };
+
+   

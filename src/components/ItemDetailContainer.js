@@ -1,31 +1,6 @@
 import React,{useState,useEffect} from "react";
 import ItemDetails from "./ItemDetail";
-
-// const productoDetalle =[
-//     {   id:1 
-//         ,name:"Placa de video Geforce 3080"
-//         ,description:`Placa de video GeFroce Placa de video Colorful RTX3080Ti iGame Advanced OC 12GB GDDR6X
-//         - Chipset: GeForce® RTX 3080 Ti
-//         - Cores: 10240
-//         - Reloj de núcleo: 1365 MHz
-//         - Reloj de la memoria efectiva: 19 Gbps
-//         - Tamaño de la memoria: 12GB
-//         - Tipo de memoria: GDDR6X
-//         - Interfaz de memoria: 384 bits
-//         - DirectX: 12 Ultimate
-//         - OpenGL 4.6
-//         - Puertos: 1x HDMI, 3x DisplayPort 1.4"`
-//         ,price:1250
-//         ,stock:5
-//         ,img:"https://http2.mlstatic.com/D_NQ_NP_853934-MLA47492063447_092021-O.webp" }
-
-
-
-// const promesa= new Promise((res)=>{
-//     setTimeout(() => {
-//         res(productoDetalle); 
-//     }, 2000);
-//   })
+import {useParams} from "react-router-dom";
 
 
 
@@ -33,32 +8,58 @@ import ItemDetails from "./ItemDetail";
 
 
 export default function ItemDetailContainer(){
-    const inicial=[]
-    const [arrProductosDetalles,setArrProductosDetalles]=useState(inicial);
+    const {id}=useParams();
+    const [arrProductosDetalles,setArrProductosDetalles]=useState([]);
+    const [productoMostrar,setProductoMostrar]=useState(null);
+    const [loading,setLoading]=useState(true);
+    const [error,setError]=useState("")
 
-    const getItem = () => {
-        fetch("https://mocki.io/v1/93586c4a-0fd6-45d2-8efb-fa9b9a973056")
-        .then(data=>data.json())
-        .then(product=>setArrProductosDetalles(product))
+
+    
+        //consume cosas asincronas,osea cuando hago una peticion a un servidor no puedo parar el codigo y esperar q me responda el servidor
+        //entonces se hace de una forma asincrona, hazme esta cosa y al mismo tiempo esperame,
+    
+
+    const getItem = async () => {
+        try {
+        const data= await fetch(" https://mocki.io/v1/07324334-8401-495b-be1c-68982f5c4c17")
+        const product= await data.json();
+        setArrProductosDetalles(product);
+        
+        }
+        catch{
+            setError("No se ha podido cargar el detalle del producto,hubo un error")
+        }
+        finally{
+            setLoading(false);
+        }
         }
 
     useEffect(() => {
       getItem();
     }, [])
+  
+    useEffect(() => {
+        setProductoMostrar(arrProductosDetalles.find(prod => {
+            return prod.id == id
+        }))
+      }, [arrProductosDetalles])
     
    
   
-       console.log(arrProductosDetalles);
+       
+    
     return(
-            
-        arrProductosDetalles.map(productoDetalle=> 
-            <>
-           
+            productoMostrar 
+            ? 
+            <div key={productoMostrar.id}> 
             <hr/>
-            <h1 className="titulo-detalle">Detalle del producto <i>{productoDetalle.name}</i></h1>
-            <ItemDetails key={productoDetalle.id} productoDetalle={productoDetalle} />
-            </>
-    ))
+
+            
+            <ItemDetails key={productoMostrar.id} productoDetalle={productoMostrar} />
+            </div>
+            :
+            <h1>Lo lamento hubo un error</h1>)
 
 
 

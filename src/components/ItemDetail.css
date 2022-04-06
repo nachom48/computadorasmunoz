@@ -1,6 +1,8 @@
 .contenedor-principal{
+    max-width:80%;
     border:thin solid lightgrey;
-    width:80%;
+    min-width: 40%;
+    overflow: hidden;
     height:100vh;
     margin-left:auto;
     margin-right:auto;
@@ -60,6 +62,8 @@
     width: 372px;
     margin-left:-15rem;
     margin-top:5rem;
+    max-width:100%;
+    min-width:min-content;
     
 }
 .boton-descripcion-debajo{
@@ -82,13 +86,14 @@
 .boton-ver-detalle{
 display:flex;
 justify-content:center;
-text-align:centeR;
 font-size:10px;
 background-color:lightyellow;
 margin-left:auto;
 margin-right:auto;
-margin-top:2rem;
+margin-top:0.5rem;
 font-weight:700;
+
+
 }
 
 .boton-comprar{
