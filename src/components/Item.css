@@ -13,7 +13,7 @@
   .card{
     
     background-color:rgb(241, 243, 201);
-    border-radius:10%;
+   
     display:flex;
     margin-left:auto;
     margin-right:auto;
@@ -36,7 +36,7 @@
     opacity:1;
     height: 40%;
     border-style:hidden;
-    border-radius:10%;
+    
     object-fit:contain;
     object-position:50% 50%;
 }
