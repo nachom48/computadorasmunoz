@@ -30,6 +30,7 @@ return(
            <Route path="/categories/:name" element={ <ItemListCointainer  />}/>
            <Route path="/product/:id" element={ <ItemDetailContainer/>}/>
            <Route path="*" element={<ErrorPage/>}/>
+           
           
            
             
