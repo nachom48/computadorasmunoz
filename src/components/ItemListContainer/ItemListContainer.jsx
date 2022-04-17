@@ -1,8 +1,8 @@
-import {ItemList} from './ItemList';
-import './ItemList.css';
+import ItemList from '../ItemList/ItemList';
+import '../ItemList/ItemList.css'
 import React,{useState,useEffect} from "react";
 import Spinner from 'react-bootstrap/Spinner';
-import { productosIniciales } from '../mock/productos';
+import { productosIniciales } from '../../mock/productos';
 
   
 

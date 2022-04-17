@@ -12,8 +12,7 @@
   }
   .card{
     
-    background-color:rgb(241, 243, 201);
-   
+    background-color:#464646 !important;
     display:flex;
     margin-left:auto;
     margin-right:auto;
@@ -26,6 +25,7 @@
     min-width:20%;
     background-color:#464646;
     color:white;
+   
   }
   .card:hover{
     box-shadow:1rem 1rem 1rem 1rem #47400150;
@@ -70,7 +70,11 @@
 .price{
     display:flex;
     justify-content:center;
+    text-align:center;
+    margin-right:4rem;
+    
     font-weight: 600;
+    
 }
 /* .boton{
   height:5%;
@@ -83,4 +87,5 @@
   flex-direction: row;
   width:100%;
   border:thin solid white;
+  
 }

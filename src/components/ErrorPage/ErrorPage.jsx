@@ -1,7 +1,7 @@
 import React from "react";
 import './errorPage.css';
 
-import {NavLink,Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 export  const ErrorPage=()=>{
     

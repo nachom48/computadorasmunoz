@@ -9,62 +9,23 @@ a{
 }
 
 .banner{
-    font-weight: 400;
+    font-weight: 500;
 
     color:#eee;
     font-family: 'Segoe UI';
     font-size:16px;
     background-color:#464646;
-    height: 7ch;
+    height: 5vh;
    position:sticky;
+   display:flex;
+   justify-content:space-between;
    margin-bottom:0;
-   padding-bottom:0;
+   align-items: center;
     
-}
-.banner-left{
-    padding-left:2ch;
-    position:absolute;
-    margin-top:auto;
-    margin-bottom:auto;
-    text-align: left;
-    display:block;
-    top:20px;
-}
-.banner-right{
-  position:absolute;
-  right:30px;
-  margin-top:auto;
-  margin-bottom:auto;
-    top:20px;
-    text-align:right;
-    display:block;
-   padding-bottom:64px;
+
   
 }
-
- .navBar-bottom{
-     
-     width: 80%;
-     margin:2rem auto;
-     display:flex;
-     align-items: center;
-     justify-content: space-between;
-     border-bottom-style:solid;
- }
-
- .img-h1{
-     display:flex;
-     align-items: center;
-
- }
-
- .imagen{
-     width: 6vh;
-    margin-right:2ch; 
-     
- }
-
- .barra-navegadora {
+.barra-navegadora {
    
     overflow:hidden;
      margin:3rem;
@@ -88,6 +49,34 @@ a{
 
 .barra-navegadora a:hover{
     
-    font-size:24px;
-    font-weight:800;
+    font-size:18px;
+    font-weight:700;
 }
+.computadoras-munoz{
+    font-size:2vw;
+}
+
+ .navBar-bottom{
+     
+     width: 80%;
+     margin:2rem auto;
+     display:flex;
+     align-items: center;
+     justify-content: space-between;
+     border-bottom-style:solid;
+     height:8vh;
+ }
+
+ .img-h1{
+     display:flex;
+     align-items: center;
+
+ }
+
+ .imagen{
+     width: 6vh;
+    margin-right:2ch; 
+     
+ }
+
+ 

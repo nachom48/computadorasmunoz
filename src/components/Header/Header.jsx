@@ -4,7 +4,7 @@ import React from 'react';
 import './Header.css';
 import logo from '../../img/logopc.png'
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import { CartWidget } from '../CartWidget';
+import { CartWidget } from '../CartWidget/CartWidget';
 import {NavLink,Link} from "react-router-dom";
 import Dropdown from 'react-bootstrap/Dropdown';
 
@@ -32,14 +32,14 @@ const Header = () =>{
             <header>
                 <div className='navBar'>
                     <div className='banner'>
-                        <span className="banner-right">Envio gratis en compras superiores a $16000</span>
-                        <span className="banner-left">WhatsApp 3516170XXX | Email: computadorasmunoz@gmail.com</span>
+                        <div className="banner-right">Envio gratis en compras superiores a $16000</div>
+                        <div className="banner-left">WhatsApp 3516170XXX | Email: computadorasmunoz@gmail.com</div>
                     </div>
     
                     <div className='navBar-bottom' >
                         <div className="img-h1"> 
                              <NavLink to="/"><img src={logo} alt="logo tienda" className='imagen'></img></NavLink>
-                            <h1>Computadoras Muñoz</h1>
+                            <h1 className="computadoras-munoz">Computadoras Muñoz</h1>
                         </div>
                         <nav className='barra-navegadora'>
                             {links.map((el)=>{
@@ -50,7 +50,7 @@ const Header = () =>{
                                      )
                             }            
                             <Link to="#"><PersonOutlineIcon className='userIcon'></PersonOutlineIcon></Link>
-                            <Link to="/cart"><CartWidget></CartWidget></Link>
+                            <Link to="/cart"><CartWidget className="cart-widget"></CartWidget></Link>
                         </nav>
                         <Dropdown>
                             <Dropdown.Toggle  variant="warning" id="dropdown-basic">Categorias</Dropdown.Toggle>

@@ -11,6 +11,12 @@
 
 .spinners{
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     margin:10rem;
+  }
+
+  .cargando{
+      display:flex;
+      justify-content:center;
+      align-items: center;
   }

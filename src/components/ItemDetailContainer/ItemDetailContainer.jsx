@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from "react";
-import ItemDetails from "./ItemDetail";
+import ItemDetails from "../ItemDetail/ItemDetail";
 import {useParams} from "react-router-dom";
 
 
@@ -22,7 +22,7 @@ export default function ItemDetailContainer(){
 
     const getItem = async () => {
         try {
-        const data= await fetch(" https://mocki.io/v1/07324334-8401-495b-be1c-68982f5c4c17")
+        const data= await fetch(" https://mocki.io/v1/19f7aadc-f0f8-4604-bc96-10020a8f4c15")
         const product= await data.json();
         setArrProductosDetalles(product);
         

@@ -1,11 +1,10 @@
 import React,{useState,useEffect} from "react";
-import { Item } from "./Item";
+import Item from "../Item/Item";
 import './ItemList.css';
-
 import {useParams} from "react-router-dom";
 
 
-export const ItemList= ({productos})=>{
+const ItemList= ({productos})=>{
     
       const inicial=[]
       const [productosCatalogo,setProductos]=useState(inicial);
@@ -48,4 +47,4 @@ export const ItemList= ({productos})=>{
        
    )
 };
-
+export default ItemList;

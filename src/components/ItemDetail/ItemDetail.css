@@ -5,8 +5,10 @@
     margin:2ch;
 }
 .boton-agregar,.boton-borrar{
+    
     font-family:sans-serif;
     width:100px;
+    
     font-weight:600;
     height:30;
     background-color:rgb(51,51,51);
@@ -96,7 +98,7 @@ color:rgb(255,221,45);
     border:thin solid lightgrey;
     min-width: 40%;
     overflow: hidden;
-    height:100vh;
+    height:80%;
     margin-left:auto;
     margin-right:auto;
     display:grid;
@@ -142,7 +144,7 @@ color:rgb(255,221,45);
     margin-left:-15rem;
     margin-top:5rem;
     width:35vh;
-    min-width:min-content;
+    min-width:50vh;
     
 }
 
@@ -190,4 +192,11 @@ justify-content:center;
 }
 .total{
     font-size:25px;
+    
+}
+.total-a-pagar{
+    font-size:1.5vw;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-decoration:solid;
 }

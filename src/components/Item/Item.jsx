@@ -4,10 +4,20 @@ import Card from 'react-bootstrap/Card'
 import './Item.css';
 import {Link} from "react-router-dom";
 
-
-export const Item = ({product})=>{
+const Item = ({product})=>{
     const {name,price,img} = product;
+    // const {cartContext,addProduct}=useContext{contexto};
+
+const manejarClick={
+    
+    // o podria usar addUsuario en el
+}
+
+
+
+
     return (
+        <>
         <Card className="card">
             <Card.Img  className="card-img" variant="top" src={img} alt=""/>
             <Card.Body>
@@ -19,5 +29,7 @@ export const Item = ({product})=>{
                    </div>
            </Card.Body>
        </Card>
+       </>
       )
 }
+export default Item;
