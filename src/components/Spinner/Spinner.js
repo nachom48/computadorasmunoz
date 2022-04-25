@@ -4,19 +4,22 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 // Can be a string as well. Need to ensure each key-value pair ends with ;
 const override = css`
-  display: block;
-  margin: 0 auto;
-  border-color: red;
+  display: flex;
+  margin-right:auto;
+  margin-left:auto;
+  justify-content:center;
+  align-items:center;
+  border:thick solid black;
+  margin-top:25rem;
 `;
 
 const Spinner=()=> {
-  let [loading, setLoading] = useState(true);
-  let [color, setColor] = useState("#ffffff");
+ 
 
   return (
     <div className="sweet-loading">
 
-      <ClipLoader size={550} />
+      <ClipLoader size={300} css={override} />
     </div>
   );
 }

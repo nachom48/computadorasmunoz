@@ -2,11 +2,9 @@ import React,{useState} from "react";
 import Item from "../Item/Item";
 import './ItemList.css';
 
-const ItemList= ()=>{
+const ItemList= ({productosCatalogo})=>{
     
-      const inicial=[]
-      const [productosCatalogo,setProductos]=useState(inicial);
-   
+     
   return (
          <>  <div className='cardss'>
                  {productosCatalogo.map(product => 

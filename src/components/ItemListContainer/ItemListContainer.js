@@ -4,7 +4,6 @@ import './ItemListContainer.css'
 import {useParams} from "react-router-dom";
 
 import React,{useState,useEffect} from "react";
-import {ClipLoader } from "react-spinners/ClipLoader";
 import Carrousel from '../Carrousel/Carrousel';
 import {getDocs,collection,where,query} from "firebase/firestore"; 
 import {db} from "../../firebase/firebase";
@@ -19,7 +18,7 @@ import Spinner from '../Spinner/Spinner';
 
 const ItemListContainer = () => {
     const [productosCatalogo,setProductos]=useState([]);
-    const [loading,setLoading]=useState(false);
+    const [loading,setLoading]=useState(true);
     const [show,setShow]=useState(false);
     const {name,marcaID}=useParams();
     
@@ -43,6 +42,7 @@ const ItemListContainer = () => {
                        })
               setProductos(lista);
               setShow(true)
+              setLoading(false);
            })}
         else if(marcaID){
              let searchParam=marcaID;
@@ -61,6 +61,7 @@ const ItemListContainer = () => {
                     })
                 setProductos(lista);
                 setShow(true)
+                setLoading(false);
                            })}
         else{
            const productsCollection=collection(db,"ItemCollection")
@@ -77,27 +78,38 @@ const ItemListContainer = () => {
                   return product;
                   })
               setProductos(lista1);
+              setLoading(false);
             })
              };},[marcaID,name])
-          
-      return (
-        <> 
-                   <Carrousel/>
-                    {/* <Toggle/> */}
-                    {/* <SortBy/> */}
-                 {show?
-                    <div className="cardss">
-                         <ItemList  productos={productosCatalogo} />
-                    </div>
-                  :<>
-                    <h2 className="titulo-destacados">Productos Destacados</h2> 
+
+  
+    return(
+        <>
+          {loading ?
+                <Spinner className="spinner"></Spinner>
+            :
+              <>
+                <Carrousel />
+                {show
+                    ?
                       <div className="cardss">
-                         <ItemList  productos={productosCatalogo} />
-                    </div>
-                     </>}
-         </>
+                          <ItemList  productosCatalogo={productosCatalogo} />
+                      </div>
+                    :
+                      <>
+                          <h2 className="titulo-destacados">Productos Destacados</h2> 
+                          <div className="cardss">
+                            <ItemList  productosCatalogo={productosCatalogo} />
+                          </div>
+                      </> 
+                }
+              </>
+          }
+        </>
     )
-}
+          
+  }
+
   export default ItemListContainer;
 
    
