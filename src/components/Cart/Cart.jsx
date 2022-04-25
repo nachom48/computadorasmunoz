@@ -35,11 +35,11 @@ const finalizarCompra=()=>{
 	swal("Excelente", "Has realizado la compra!", "success");
 
 }
-
+	console.log(cart);
 	return (
 		<div className="cart">
 			<h1 className="titulo-total-productos">TIENES <b>{contadorProductos}</b> EN TU CARRO DE COMPRA</h1>
-		
+				
 
 				{cart?.map(cart => (
 					<CartItem key={cart.product.id} product={cart.product} quantity={cart.quantity} setEstadoCantidad  />))}

@@ -8,6 +8,7 @@ const CustomProvider = ({children})=>{
     const [contadorProductos,setContadorProductos]=useState(0);
     const [cart,setCart]=useState([]);
     const [totalPrice,setTotalPrice]=useState(0);
+    
 
     const addProduct =(product,quantity)=>{
         const newProduct={
@@ -58,10 +59,7 @@ const CustomProvider = ({children})=>{
         return totalPrice;
     }    
    
-   
-
-    
-    const clearCart=()=>{
+   const clearCart=()=>{
         setCart([]);
 
     }

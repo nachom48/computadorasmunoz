@@ -29,7 +29,7 @@ const handleCompra=(productoDetalle,CantidadTotal)=>{
       .then((willDelete) => {
         if (willDelete) {
             addProduct(productoDetalle,CantidadTotal);
-            
+            console.log("aca definitivamnete lo agregue")
           swal("El producto se ha agregado a su carrito", {
             icon: "success",
           });

@@ -26,7 +26,11 @@ export default function ItemDetailContainer(){
             getDoc(refDoc)
             // const q=query(productsCollection,where("id","==",id),);
             .then((result)=>{
-                setProductoMostrar(result.data())
+                const productoDetallado={
+                    id:result.id,
+                    ...result.data()
+                }
+                setProductoMostrar(productoDetallado)
                 setLoading(true);
             }
             )     

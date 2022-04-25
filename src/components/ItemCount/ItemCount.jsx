@@ -48,6 +48,7 @@ const agregarAlCarrito=()=>{
     setCantidadTotal(quantity)
     setCompra(false);
     setTotal(precioTotal);
+    console.log("aca lo agregue al carrito")
     }
     else{
         swal("No ha elegido ninguna cantidad del producto", "Seleccione al menos una unidad", "error");
