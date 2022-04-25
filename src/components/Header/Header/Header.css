@@ -8,6 +8,12 @@ a{
     color:#464646 !important;
 }
 
+.computadoras-munoz{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size:3vh !important;
+}
 .banner{
     font-weight: 500;
 
@@ -27,7 +33,6 @@ a{
 }
 .barra-navegadora {
    
-    overflow:hidden;
      margin:3rem;
      
      display:flex;
@@ -36,14 +41,15 @@ a{
     justify-content:space-between; 
     }
 .barra-navegadora a{
-    margin-top:5rem;
+    margin-top:4rem;
     display:flex;
     justify-content:flex-start;
     margin:0.5rem;
     color:#464646;
     font-weight: 600;
-    font-size:16px;
+    font-size:14px;
     text-decoration:none;
+
 }
 
 
@@ -53,9 +59,17 @@ a{
     font-weight:700;
 }
 .computadoras-munoz{
-    font-size:2vw;
+    font-size:1vw;
 }
 
+.header{
+    position:fixed;
+    width:100%;
+    background-color: white;
+    top:0;
+    z-index: 999;
+    
+}
  .navBar-bottom{
      
      width: 80%;

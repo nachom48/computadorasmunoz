@@ -21,9 +21,11 @@ const ItemCount = ({producto,onAdd,setTotal,setCompra,setCantidadTotal})=>{
         setQuantity(quantity+1)
         setStockDisponible(stockDisponible-1)
         setPrecioTotal(price*(quantity+1));
-        if(quantity===stock){
+        }
+     if(stock===quantity){
             swal("No quedan mas productos en stock");
-        }};
+        
+    };
 
 }
 const handlerClickSub=()=>{
@@ -36,7 +38,6 @@ const handlerClickSub=()=>{
          setPrecioTotal(0);
      }   
 }
-
 const handleClean=()=>{
     setQuantity(0);
     setPrecioTotal(0);
@@ -52,35 +53,29 @@ const agregarAlCarrito=()=>{
         swal("No ha elegido ninguna cantidad del producto", "Seleccione al menos una unidad", "error");
     }
 }
- return( <>
-            <div className="stock">
+ return( <div classname="item-count-general">
+
+                    <div className="stock">
                         Stock Disponible {stockDisponible}
                     </div>
-             <div className="botones-contador" >
-            <Button variant="contained" color="primary" onClick={handlerClickSub}>-</Button>  
-            <p className="contador">{quantity}</p>
-            <Button variant="contained" color="primary" onClick={handlerClickAdd}> +</Button>
-             </div>
-                <div className="total">
-                    Total ${precioTotal} 
-                </div>
-              <div className="botones-agregar-carrito">  
-             <div className="boton-borrar">
-                <Button variant="contained" onClick={handleClean} color="primary" >Borrar del Carrito</Button>
-            </div>
-            <div className="boton-agregar">
-                <Button variant="contained" color="primary" onClick={()=>agregarAlCarrito()}  > Agregar al Carrito</Button>
-            </div> 
-            </div>   
+                     <div className="botones-contador" >
+                        <Button variant="contained" color="primary" onClick={handlerClickSub}>-</Button>  
+                        <p className="contador">{quantity}</p>
+                        <Button variant="contained" color="primary" onClick={handlerClickAdd}> +</Button>
+                    </div>
+                    <div className="total">
+                         Total ${precioTotal} 
+                   </div>
+                  <div className="botones-agregar-carrito">  
+                    <div className="boton-borrar">
+                         <Button variant="contained" onClick={handleClean} color="primary" >Borrar del Carrito</Button>
+                    </div>
+                    <div className="boton-agregar">
+                         <Button variant="contained" color="primary" onClick={()=>agregarAlCarrito()}  > Agregar al Carrito</Button>
+                    </div> 
+                 </div>   
 
-            </>)
-     
-       
-                  
-                   
-      
-
-    }
+            </div>)}
     export default ItemCount
 
 

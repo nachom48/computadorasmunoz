@@ -25,8 +25,10 @@
     min-width:20%;
     background-color:#464646;
     color:white;
+    transition:all 0.3s ease;
    
   }
+  
   .card:hover{
     box-shadow:1rem 1rem 1rem 1rem #47400150;
     cursor:pointer;
@@ -51,22 +53,13 @@
     justify-content:center;
     overflow-x:hidden;
 }
-/* .buttons{
-    font-weight:700;
-    display:flex;
-    justify-content:space-evenly;
-    height:content !important;
-    
-}
+.filter{
+  display:none;}
 
-.boton-agregar{
-     margin-top:1ch;
-     display:flex;
-     font-weight:700;
-     margin-left:auto;
-     margin-right:auto;
-     justify-content:center;
-} */
+
+ 
+
+
 .price{
     display:flex;
     justify-content:center;
@@ -76,10 +69,7 @@
     font-weight: 600;
     
 }
-/* .boton{
-  height:5%;
-  margin-bottom:0;
-} */
+
 .boton-detalle{
   display:flex !important;
   justify-content: center;

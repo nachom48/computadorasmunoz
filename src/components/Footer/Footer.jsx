@@ -1,3 +1,4 @@
+import "./Footer.css"
 import React from 'react';
 import {
   MDBFooter,
@@ -10,7 +11,7 @@ import {
 
 export  const Footer=()=> {
   return (
-    <MDBFooter className='text-center' color='white' bgColor='dark'>
+    <MDBFooter className='text-center footer' color='white' bgColor='dark'>
       <MDBContainer className='p-4'>
         <section className='mb-4'>
           <a className='btn btn-outline-light btn-floating m-1' href='https://www.facebook.com/nacho.munoz.5' role='button'>

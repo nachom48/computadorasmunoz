@@ -2,12 +2,15 @@
 .cardss{
     display: flex;
     flex-wrap:wrap;
-    justify-content:space-evenly;
-    width: 100%;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:1rem;
+    width: 90%;
     margin-left:auto;
     margin-right:auto;
+   margin-bottom:15rem;
+    
+    
 }
-
 
 .spinners{
     display:flex;
@@ -19,4 +22,18 @@
       display:flex;
       justify-content:center;
       align-items: center;
+  }
+  .titulo-destacados{
+      font-family: sans-serif;
+      display:flex !important;
+      justify-content:flex-start !important;
+      width:70%;
+      margin-right:auto;
+      margin-left:auto;
+      margin-top:3rem;
+      text-decoration:underline;
+     text-decoration-color:rgb(254, 246, 89);
+     margin-bottom:0;
+     padding-bottom:0;
+
   }

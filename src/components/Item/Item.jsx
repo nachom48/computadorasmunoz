@@ -6,14 +6,6 @@ import {Link} from "react-router-dom";
 
 const Item = ({product})=>{
     const {name,price,img} = product;
-    // const {cartContext,addProduct}=useContext{contexto};
-
-const manejarClick={
-    
-    // o podria usar addUsuario en el
-}
-
-
 
 
     return (

@@ -1,0 +1,17 @@
+.spinner{
+    
+    color:black;
+    font-size:100px;
+ 
+}
+
+.spinner-circular-inicio{
+    display:flex !important;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:15rem;
+    
+}

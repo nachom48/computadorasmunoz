@@ -38,13 +38,6 @@ useEffect(() => {
 	}
 	updateCart(newUpdateProduct)
 }, [count])
-useEffect(() => {
-	const newUpdateProduct={
-		product,
-		quantity:count
-	}
-	updateCart(newUpdateProduct)
-}, [count])
 
 
 

@@ -7,6 +7,9 @@
     gap:3rem;
     font-family:sans-serif;
     margin-bottom:5rem;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20rem;
 }
 
 
@@ -22,7 +25,12 @@
   }
 
   .carro-vacio-mensaje{
-
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
   }
   
   .botones-borrar-seguir{
@@ -52,7 +60,7 @@
     align-items: center;
     width:11vw;
     height:5vh;
-    border:1px solid rgb(147, 147, 147);
+    border:5px solid rgb(147, 147, 147);
     
 
 }
@@ -60,7 +68,7 @@
 .quantity-price,.total-price{
     display:flex;
     justify-content: space-between;
-    border:thin solid rgb(147, 147, 147);
+    border:1px solid rgb(207, 207, 207);
     
 
 }

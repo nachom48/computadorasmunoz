@@ -7,6 +7,7 @@ export const productosIniciales=[
         ,category:"componentes"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_853934-MLA47492063447_092021-O.webp" 
         ,destacado:true
+        ,marca:"nvidia"
     },
         
     {   id:2
@@ -16,7 +17,9 @@ export const productosIniciales=[
         ,stock:5
         ,category:"componentes"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_933872-MLA45654252002_042021-O.webp" 
-        ,destacado:true},
+        ,destacado:true
+        ,marca:"coolermaster"
+    },
     {   id:3
         ,name:"Disco Solido SSD Colorful"
         ,description:"Disco Solido SSD Colorfull power."
@@ -24,7 +27,9 @@ export const productosIniciales=[
         ,stock:5
         ,category:"componentes"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_682074-MLA41164832047_032020-O.webp" 
-        ,destacado:true},
+        ,destacado:true
+        ,marca:"colorfull"    
+    },
     {   id:4
         ,name:"Memoria RAM 8 GB DDR 5 Colorful"
         ,description:"Memoria RAM 8 GB "
@@ -32,7 +37,9 @@ export const productosIniciales=[
         ,stock:5
         ,category:"componentes"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_659197-MLA48429437022_122021-W.webp" 
-        ,destacado:true},
+        ,destacado:true
+        ,marca:"colorfull" 
+    },
     {   id:5
         ,name:"Motherboard ASUS PRIME HS510M"
         ,description:"Motherboard Asus Prime HS510M"
@@ -40,7 +47,9 @@ export const productosIniciales=[
         ,stock:5
         ,category:"componentes"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_672250-MLA48003407067_102021-W.webp" 
-        ,destacado:false},
+        ,destacado:false
+        ,marca:"asus"
+    },
     {   id:6
         ,name:"Gabinete Vidrio Templado"
         ,description:"Gabinete Vidrio Templado"
@@ -48,7 +57,8 @@ export const productosIniciales=[
         ,stock:5
         ,category:"componentes"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_684655-MLA43249855264_082020-W.webp" 
-        ,destacado:false},
+        ,destacado:false
+        ,marca:"" },
     {   id:7
         ,name:"Teclado Mecanico Reddragon "
         ,description:"Teclado Mecanico Reddragon"
@@ -56,7 +66,8 @@ export const productosIniciales=[
         ,stock:5
         ,category:"perisfericos"
         ,img:"https://http2.mlstatic.com/D_NQ_NP_871071-MLA47949886927_102021-V.webp" 
-        ,destacado:false},
+        ,destacado:false
+        ,marca:"reddragon" },
     {   id:9
         ,name:"Monitor 4k 28 pulgadas "
         ,description:"Monitor 4k 28 Pulgadas"
@@ -72,7 +83,8 @@ export const productosIniciales=[
          ,stock:5
          ,category:"pcs"
          ,img:"https://mundofix.com/349737-large_default/pc-intel-i5-10400-240gb-ssd-4gb-hdmi.jpg" 
-         ,destacado:false},
+         ,destacado:false
+         ,marca:"intel"},
 {         id:11
           ,name:"TP-Link TL-WN725N USB"
           ,description:"TP-Link TL-WN725N USB"
@@ -80,7 +92,8 @@ export const productosIniciales=[
           ,stock:5
           ,category:"redes"
           ,img:"https://www.com-tech.com.ar/imagenes/imagenes-productos/TL-WN725N-1.jpg" 
-          ,destacado:false},
+          ,destacado:false
+          ,marca:"tplink"},
 {          id:12
            ,name:"Reloj Haxly QUO 1.0 Grey"
            ,description:"Reloj Haxly QUO 1.0 Grey"
@@ -88,7 +101,8 @@ export const productosIniciales=[
            ,stock:5
            ,category:"electronica"
            ,img:"https://mundofix.com/373800-home_default/haxly-quo-10-grey.jpg"
-           ,destacado:false }
+           ,destacado:false 
+           ,marca:"xiaomi"}
   
 
 ];
