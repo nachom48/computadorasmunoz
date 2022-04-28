@@ -1,0 +1,23 @@
+.formulario-compra{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:2vh;
+    gap:1rem;
+}
+h1{
+    display:flex;
+    justify-content: center;
+
+}
+.btnPagar{
+   font-size:1vw;
+   width:6vw;
+   height:4vh;
+   border-radius:10%;
+   color:rgb(255,221,45);
+   background-color:rgb(51,51,51);
+}

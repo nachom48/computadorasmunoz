@@ -3,6 +3,7 @@ import ItemDetails from "../ItemDetail/ItemDetail";
 import {useParams} from "react-router-dom";
 import {db} from "../../firebase/firebase"
 import {getDocs,collection,query,where, getDoc,doc} from "firebase/firestore"; 
+import Spinner from "../Spinner/Spinner";
 
 
 
@@ -62,7 +63,7 @@ export default function ItemDetailContainer(){
         <ItemDetails key={productoMostrar.id} productoDetalle={productoMostrar} />
          </div>
             :
-            <h1>Lo lamento hubo un error</h1>)
+            <Spinner/>)
               
            
 

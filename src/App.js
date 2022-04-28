@@ -12,9 +12,9 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import Cart from "./components/Cart/Cart";
 import {ErrorPage} from "./components/ErrorPage/ErrorPage"
 import { Footer } from "./components/Footer/Footer";
-import Spinner from "./components/Spinner/Spinner";
 //Navigate
 import {BrowserRouter,Routes,Route} from "react-router-dom";
+import { Formulario } from "./components/Formulario/Formulario";
 
 
 
@@ -34,7 +34,8 @@ return(
            <Route path="/categories/:name" element={ <ItemListCointainer  />}/>
            <Route path="/marcas/:marcaID" element={ <ItemListCointainer  />}/>
            <Route path="/product/:id" element={ <ItemDetailContainer/>}/>
-           <Route path="*" element={<ErrorPage/>}/>            
+           <Route path="*" element={<ErrorPage/>}/>   
+           <Route path="/finalizarcompra" element={< Formulario />} />     
          </Routes>
          </CustomProvider>
          <Footer/>

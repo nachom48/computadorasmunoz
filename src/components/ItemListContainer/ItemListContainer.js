@@ -8,9 +8,6 @@ import Carrousel from '../Carrousel/Carrousel';
 import {getDocs,collection,where,query} from "firebase/firestore"; 
 import {db} from "../../firebase/firebase";
 //aca importo la configuracion
-
-import SortBy from '../SortBy/SortBy';
-import Toggle from '../toggleButton/Toggle';
 import Spinner from '../Spinner/Spinner';
 //si quiero de una categoria nomas es con la query
   
@@ -26,9 +23,9 @@ const ItemListContainer = () => {
     useEffect(() => {
       
       if(name){
-             let searchParam=name;
+             
              const productsCollection=collection(db,"ItemCollection")
-             const q2=query(productsCollection,where("category","==",searchParam),);
+             const q2=query(productsCollection,where("category","==",name),);
              getDocs(q2)
               .then((result)=>{
                         const docs= result.docs 
@@ -45,9 +42,8 @@ const ItemListContainer = () => {
               setLoading(false);
            })}
         else if(marcaID){
-             let searchParam=marcaID;
              const productsCollection=collection(db,"ItemCollection")
-             const q2=query(productsCollection,where("marca","==",searchParam),);
+             const q2=query(productsCollection,where("marca","==",marcaID),);
              getDocs(q2)
             .then((result)=>{
                   const docs= result.docs 
@@ -81,9 +77,7 @@ const ItemListContainer = () => {
               setLoading(false);
             })
              };},[marcaID,name])
-
-  
-    return(
+  return(
         <>
           {loading ?
                 <Spinner className="spinner"></Spinner>

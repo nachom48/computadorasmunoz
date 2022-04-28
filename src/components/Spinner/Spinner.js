@@ -10,7 +10,7 @@ const override = css`
   justify-content:center;
   align-items:center;
   border:thick solid black;
-  margin-top:25rem;
+  margin-top:10rem;
 `;
 
 const Spinner=()=> {

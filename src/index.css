@@ -1,16 +1,15 @@
 html {
-    height: 100;
-    position: relative;
+    height: 100%;
+   
    
   }
-  body {
-    margin: 0;
-    margin-bottom: 40px;
-  }
+
+   
+
   footer {
-    position: fixed;
+    position:fixed;
     bottom: 0;
     width: 100%;
-    height: auto;
+    height:15%;
     margin-bottom:0 !important;
   }
