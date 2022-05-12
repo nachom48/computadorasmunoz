@@ -28,24 +28,28 @@ function handleChange(e){
         <form className='formulario-compra'>
           <label htmlFor="name" className='labelForm'>Nombre:</label>
           <input
+            
             id="name"
             name="name"
-            type="name"
+            type="text"
             placeholder="Ingrese aqui su nombre"
             value={buyer.name}
             onChange={handleChange}
+            required
           />
           <label htmlFor="lastname" className='labelForm'>Apellido:</label>
           <input
             id="lastname"
             name="lastname"
-            type="lastname"
+            type="text"
             placeholder='Ingrese aqui su apellido'
             value={buyer.lastname}
             onChange={handleChange}
+            
           />
           <label htmlFor="email" className='labelForm'>Email:</label>
           <input
+            required
             id="email"
             name="email"
             type="email"

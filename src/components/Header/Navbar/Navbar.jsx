@@ -8,14 +8,14 @@ import {CartWidget} from '../../CartWidget/CartWidget.js'
 const links=[
     {name:"Marcas", route:"/marcas", id:1},
     {name:"Nosotros", route:"/nosotros", id:2},
-    {name:"Centro Ayuda", route:"#", id:3},
-    {name:"Ventas Corporativas", route:"#", id:4},
-    {name:"Contacto", route:"#", id:5},
+    {name:"Centro Ayuda", route:"/centroayuda", id:3},
+    {name:"Ventas Corporativas", route:"/error", id:4},
+    {name:"Contacto", route:"/contactenos", id:5},
     
 
 ]
 const marcas=[
-    {name:"Red Dragon",route:"/marcas/red-dragon",id:6},
+    {name:"Red Dragon",route:"/marcas/reddragon",id:6},
     {name:"Nvidia",route:"/marcas/nvidia",id:7},
     {name:"Xiaomi",route:"/marcas/xiaomi",id:8},
     {name:"AMD",route:"/marcas/amd",id:9},

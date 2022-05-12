@@ -8,23 +8,25 @@
     align-items: center;
 }
 .errorcode{
-font-size:250px;
-
-display:flex;
-margin-bottom:-3rem;
-color:#464646;
+    font-size:15vw;
+    display:flex;
+    margin-bottom:0;
+    color:#464646;
+    vertical-align: bottom;
 }
 .errorPage-bottom{
     width:100%;
+    height:20%;
     display:flex;
     justify-content:center;
     flex-direction:column;
     align-items:center;
     font-weight:600;
-    font-size:18px;
+    font-size:1.3vw;
     margin-top:0;
     color:white;
     background-color:#464646;
+    margin-bottom:5vw !important;
 }
 .bottonHome{
     border-radius:10px;

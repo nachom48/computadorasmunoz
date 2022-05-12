@@ -1,0 +1,9 @@
+.contactenos-banner{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,238,238,1) 0%, rgba(71,72,85,1) 0%, rgba(117,110,117,1) 17%, rgba(109,102,110,1) 46%, rgba(162,162,162,1) 76%, rgba(182,185,186,1) 100%, rgba(84,187,241,1) 100%, rgba(0,212,255,1) 100%);
+    font-size:4vw;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    color:white;
+}

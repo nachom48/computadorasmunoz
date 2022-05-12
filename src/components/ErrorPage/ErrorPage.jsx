@@ -7,7 +7,7 @@ export  const ErrorPage=()=>{
     
     return (
             <div className="errorPage">
-                <h1 className="errorcode">404</h1>
+                <div className="errorcode">404</div>
                 <div className="errorPage-bottom">
                     <p>Lo lamento, página no encontrada.</p>
                     <p>La pagina a la que intento acceder no pudo ser encontrada.</p>

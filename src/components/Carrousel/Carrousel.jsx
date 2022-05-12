@@ -20,14 +20,14 @@ export default function Carrousel() {
           <MDBCarouselElement className="imagen-carrousel-1" src='https://images.alphacoders.com/170/170791.jpg' alt='Geforce' />
           <MDBCarouselCaption>
             <h5 className="titulo-carrousel">Compra lo mejor de Nvidia aqui</h5>
-            <Link to={`/`}> <Button variant="warning">Conseguilos Aqui</Button></Link>
+            <Link to={`/marcas/nvidia`}> <Button variant="warning">Conseguilos Aqui</Button></Link>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem>
           <MDBCarouselElement className="imagen-carrousel" src='https://mcdn.wallpapersafari.com/medium/15/45/toWbFH.jpg' alt='RedDragon' />
           <MDBCarouselCaption>
             <h5 className="titulo-carrousel">Consegui lo mejor de RedDragon</h5>
-            <Button variant="warning">Conseguilos Aqui</Button>
+            <Link to={`/marcas/reddragon`}><Button variant="warning">Conseguilos Aqui</Button></Link>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         

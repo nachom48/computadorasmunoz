@@ -128,11 +128,11 @@ color:rgb(255,221,45);
 .informacion-producto{
     font-family:sans-serif;
     margin-left:2rem;
-    grid-area:informacion-producto;
     display:flex;
     justify-content:center;
     font-weight:600;
-   font-size:1vw;
+   font-size:0.7vw;
+   padding-bottom:1rem;
 }
 
 .medios-pago{

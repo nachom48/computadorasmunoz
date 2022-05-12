@@ -6,7 +6,9 @@
     align-items: center;
     gap:3rem;
     font-family:sans-serif;
-    margin:0 auto;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:10rem;
 }
 
 
@@ -16,9 +18,10 @@
     font-weight:600;
     align-items: center;
     width:11vw;
-    height:5vh;
+    height:7vh;
     border:thin solid rgb(147, 147, 147);
     display:block;
+    font-size:1vw;
   }
 
   .carro-vacio-mensaje{
@@ -42,12 +45,13 @@
           flex-direction: column;
           border:1px solid rgb(207, 207, 207);
           font-size:1vw;
-          height:25vh;
+          height:18vw;
           box-sizing: content-box;
           justify-content:center;
           font-family: sans-serif;
           position:fixed;
           right:3rem;
+          bottom:5rem;
         
       }
 .boton-finalizar-compra{
