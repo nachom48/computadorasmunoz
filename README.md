@@ -46,4 +46,4 @@ En caso de haber seleccionado productos, permite rellenar un formulario para obt
 
 # Creditos
 
-Este trabajo fue desarrollado por [@zeo-return-null](https://github.com/zeo-return-null) durante el curso de React JS dictado por [@alejandromoises02](https://github.com/alejandromoises02), profesor de Coderhouse.
+Este trabajo fue desarrollado por [@nachom48](https://github.com/nachom48) durante el curso de React JS dictado por [@alejandromoises02](https://github.com/alejandromoises02), profesor de Coderhouse.
