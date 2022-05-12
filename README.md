@@ -42,7 +42,7 @@ En caso de haber seleccionado productos, permite rellenar un formulario para obt
 
 ### Navegando el Sitio
 
-![](src/assets/Navegacion.gif)
+![](src/assets/example-page.gif)
 
 # Creditos
 
